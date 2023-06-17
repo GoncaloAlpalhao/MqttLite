@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C1920"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:paddingTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5CB85C"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Connect"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D9534F"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Disconnect"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/publish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:backgroundTint="#337AB7"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Publish"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/subscribe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:backgroundTint="#808080"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Settings"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/on"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:backgroundTint="#FEE12B"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="On"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/off"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:backgroundTint="#E5A800"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Off"
+            android:textColor="@color/black" />
+
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:isScrollContainer="true"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/grid">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/idGraphView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:divider="@android:color/transparent"
+            android:clipToPadding="false"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/idGraphView"
+            tools:ignore="MissingConstraints"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
