@@ -1,9 +1,7 @@
-# This is a lite version of my app "DripDropDigital" that is open-sourced and free to use by anyone with permission 👀
+# This is a lite version of my app "DripDropDigital" that is open-sourced and free to use 👀
 
 ## DripDropDigital Do Chinês
-A Lite version of my App "open-sourced" and free to use by anyone with permission 👀
-
-100% Kotlin because kotlin (and Im f-in lazy to do any other language) 👍
+100% Kotlin because kotlin (and I like it more than any other language) 👍
 
 ## Features
 - ✔️ Connects to broker
@@ -32,7 +30,7 @@ This app is not affiliated with any company, and is not responsible for any dama
 
 ## Credits
 - [Paho MQTT](https://www.eclipse.org/paho/index.php?page=clients/android/index.php) for the MQTT client
-- Me for the rest of the app :D
+- Me for the rest of the app
 
 ## Contact
 If you want to contact me don't. I don't want to talk to you. But if you really want to, you can do so by sending me a message
